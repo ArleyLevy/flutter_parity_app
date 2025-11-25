@@ -67,6 +67,7 @@ class _Page1State extends State<Page1> {
                       SizedBox(height: 15),
                       CustomTextfield(
                         controller: bin,
+                        textInput: TextInputType.number,
                         labelText: "Entre com a paridade",
                         formatter: [
                           FilteringTextInputFormatter.allow(RegExp('[01]')),
@@ -80,6 +81,7 @@ class _Page1State extends State<Page1> {
                       SizedBox(height: 15),
                       CustomTextfield(
                         controller: par,
+                        textInput: TextInputType.text,
                         labelText: "Paridade desejada",
                       ),
                       SizedBox(height: 15),
