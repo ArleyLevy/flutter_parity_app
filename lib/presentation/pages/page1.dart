@@ -101,6 +101,25 @@ class _Page1State extends State<Page1> {
                               ),
                             );
                             return;
+                          } else if(bin.text == ''){
+                             ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: Text(
+                                  'Digite algo na paridade',
+                                ),
+                              ),
+                            );
+                            return;
+
+                          }
+                          else{
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: Text(
+                                'Dado Antigo : ${bin.text}, Dado Novo : $newPar',  
+                                ),
+                              ),
+                            );
                           }
 
                           Navigator.push(
